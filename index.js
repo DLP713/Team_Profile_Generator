@@ -107,11 +107,11 @@ function start() {inquirer.prompt([
 function createEmployee(answers){
     let newEmployee;
     if (answers.title === 'Manager'){
-        newEmployee = new Manager{answers.name, answers.id, answers.email, answers.officeNumber};
+        newEmployee = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
     } else if(answers.title === 'Engineer'){
-        newEmployee = new Engineer{answers.name, answers.id, answers.email, answers.gitHub};
+        newEmployee = new Engineer(answers.name, answers.id, answers.email, answers.gitHub);
     } else if(answers.title === 'Intern'){
-        newEmployee = new Intern{answers.name, answers.id, answers.email, answers.school};
+        newEmployee = new Intern(answers.name, answers.id, answers.email, answers.school);
     }
 
     return newEmployee;
