@@ -31,19 +31,19 @@ function start() {inquirer.prompt([
     {
         type: 'input',
         name: 'name',
-        message: 'What is your name?'
+        message: 'What is your name?',
     },
     {
         type: 'input',
         name: 'name',
         message: 'What is your ID?',
-        validate: numberCheck
+        validate: numberCheck,
     },
     {
         type: 'input',
         name: 'name',
         message: 'What is your e-mail?',
-        validate: emailCheck
+        validate: emailCheck,
     },
     {
         type: 'input',
