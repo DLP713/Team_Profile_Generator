@@ -117,6 +117,8 @@ function createEmployee(answers){
     return newEmployee;
 };
 
+start();
+
 // user is gonn run 'node index.js'
 
 // inquirer will ask questions and user will create employee objects
